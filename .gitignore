@@ -1,0 +1,4 @@
+**/node_modules
+**/dist
+/lecture-notes/*.html
+/lecture-notes/*.pdf

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login</title>
+    <script src="src/login.js" type="module" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row py-4">
+        <div class="col">
+          <h1>Manual Auth Login</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" >
+            <div id="message" class="alert alert-warning visually-hidden"></div>
+        </div>
+    </div>
+      <div class="row">
+        <div class="col" id="formCol">
+          <h3>Login Form</h3>
+
+          <form id="form">
+            <div class="mb-3">
+              <input class="form-control" type="text" name="username" />
+            </div>
+            <div class="mb-3">
+              <input class="form-control" type="password" name="usersecret" />
+            </div>
+            <div class="mb-3">
+              <button type="submit" class="btn btn-warning">Submit</button>
+            </div>
+            <div class="mb-3">
+                <a href="/" class="btn btn-primary" >Home</a>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
