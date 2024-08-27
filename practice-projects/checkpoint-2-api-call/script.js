@@ -5,7 +5,7 @@ button.addEventListener('click', postSun)
 
 function postSun(){
     const input = document.querySelector("#input");
-    fetch("https://geocode.maps.co/search?q="+ input.value +"&api_key=66c4c050ed28c998182762mbqcb0a6c").then(process_response)
+    fetch("https://geocode.maps.co/search?q="+ input.value +"&api_key=key").then(process_response)
 }
 
 function process_response(response) {
