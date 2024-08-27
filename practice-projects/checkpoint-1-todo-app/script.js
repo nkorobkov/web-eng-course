@@ -3,7 +3,7 @@ function addToDo() {
     const textField = document.querySelector("#addField");
 
     addToDoValue(textField.value);
-    saveTask(textField.value, 0)
+    //saveTask(textField.value, 0)
 
     textField.value = ''
 }
@@ -38,9 +38,11 @@ function addToDoValue(text, checked = 0) {
     const inputEl = document.createElement("input")
     inputEl.type = "checkbox"
     inputEl.addEventListener('change', check)
+
     listEl.appendChild(inputEl);
     const spanEl = document.createElement('span')
     spanEl.innerText = text;
+    
     if (checked) {
         inputEl.setAttribute("checked", true)
         spanEl.classList.add("completed")
